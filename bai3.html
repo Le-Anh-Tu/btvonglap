@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span id="result"></span>
+<script>
+    let count = parseInt(prompt("Nhập số fibonacci hiện thị ra"));
+    let a = 0, b = 1;
+    let c = 1;
+    for ( let i = 0; i < count; i++) {
+        c = a + b;
+        document.getElementById("result" ).innerHTML +=c + "<br>";
+        a = b;
+        b = c;
+    }
+
+</script>
+</body>
+</html>

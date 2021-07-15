@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p id="list"></p>
+
+<p id="summ"></p>
+
+
+<script>
+  //let count = parseInt(prompt("Nhập số fibonacci hiện thị ra"));
+  let fib1 = 0, fib2 = 1;
+  let fibNext = 1;
+  let sum = 0;
+  let fibList = "";
+  for ( let i = 1; i < 20 ; i++) {
+    fibNext = fib1 + fib2;
+    fib1 = fib2;
+    fib2 = fibNext;
+    sum += fibNext;
+    fibList += fibNext + "<br>";
+  }
+  document.getElementById("list").innerHTML = fibList;
+  document.getElementById("summ").innerHTML = sum;
+
+
+</script>
+</body>
+</html>
